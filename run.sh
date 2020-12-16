@@ -1,0 +1,1 @@
+for i in $(seq 0 10); do nohup python3 run.py --dataset cinic10 --batch_size 256 --test_batch_size 200 --experiment_dir test --seed 666 --budget 5000 --initial_size 5000 --method ADS_10 --step ${i} &; done
